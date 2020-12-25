@@ -169,6 +169,7 @@ class _FadingEdgeScrollViewState extends State<FadingEdgeScrollView>
       }
 
       if (_isScrolledToEnd == null &&
+          _controller.hasClients &&
           _controller.position.maxScrollExtent == 0) {
         setState(() {
           _isScrolledToEnd = true;
